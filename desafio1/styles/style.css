@@ -1,0 +1,165 @@
+/* Reset CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Fontes Internas */
+
+@font-face {
+  font-family: Lexend Deca;
+  src: url(../assets/fonts/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter-Medium.ttf);
+  src: url(../assets/fonts/Inter-Regular.ttf);
+}
+
+/* Header */
+
+
+.nav_container {
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  background: var(--linear);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.25rem;
+}
+
+.nav_wrapper {
+  width: 100%;
+  max-width: 56.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.56rem;
+  box-sizing: border-box;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_menu a {
+  font-family: Lexend Deca;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  
+}
+
+.input_container {
+  display: flex;
+  padding-left: 20px;
+  width: auto;
+  max-width: 56.25rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background: #FFFFFF33;
+}
+
+.input_container input {
+  display: flex;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  width: 90%;
+  height: 65px;
+  border: none;
+  color: var(--white);
+  background: none;
+  padding-left: 20px;
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 50%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Main - articles */
+
+.article_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.article_card {
+  width: 56.25rem;
+  max-height: 12.1875rem;
+  border-radius: 0.3125rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 0.3125rem;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(19, 19, 31, 0.05);
+  flex-direction: column;
+  /* margin-top: 6.25rem; */
+  margin-bottom: 3.12rem;
+  padding: 1.5rem;
+}
+
+.article_date_heart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 2rem; */
+}
+
+.article_date_heart h5 {
+  color: #717171;
+  text-align: right;
+  font-family: Lexend Deca;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.article_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.article_text h1 {
+  color: #1A202C;
+  font-family: Lexend Deca;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1.38rem 0 0.5rem 0;
+}
+
+.article_text p {
+  color: #717171;
+  font-family: Lexend Deca;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+}
