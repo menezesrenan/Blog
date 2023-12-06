@@ -16,4 +16,4 @@ Codelândia é uma comunidade que te ajuda a aprender mais por meio de desafios.
 **Autor: [Renan Menezes](https://www.linkedin.com/in/menezesrenan/)**
 
 ## Live site
-**🔗️ https://vercel.app/**
+**🔗️ https://blog-liard-pi-97.vercel.app/**
