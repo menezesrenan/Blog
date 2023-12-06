@@ -1,5 +1,6 @@
 const sun = document.querySelector('.icon_sun');
 const hearts = document.querySelectorAll('.icon_heart');
+const searchInput = document.getElementById('searchInput');
 const articleContainers = document.querySelectorAll('.article_container');
 
 sun.addEventListener('click', () => {
@@ -27,5 +28,12 @@ searchInput.addEventListener('input', () => {
     } else {
       articleContainer.style.display = 'none';
     }
+  });
+});
+
+articleContainers.forEach((articleContainer) => {
+  articleContainer.addEventListener('click', () => {
+    // Adiciona ou remove a classe 'selected' quando o card é clicado
+    articleContainer.classList.toggle('selected');
   });
 });

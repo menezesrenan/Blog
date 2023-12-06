@@ -197,6 +197,21 @@ body.dark .input_container .icon_search img {
 /* Main - Black Mode */
 body.dark .article_card {
   background: var(--black-header);
+  background: #17171A;
+}
+
+body.dark .article_container.selected .article_card {
+  background: var(--black-header);
+  border-radius: 0.5rem;
+  border: 2px solid var(--orange);
+  background: #17171A;
+}
+
+/* Adicione isto ao seu CSS para mudar a cor do coração no modo escuro */
+body.dark .article_container .article_card .article_date_heart #heartBtn .icon_heart,
+body.dark .article_container .article_card .article_date_heart .icon_heart.filled {
+  filter: invert(15%) sepia(86%) saturate(7465%) hue-rotate(4deg) brightness(92%) contrast(92%);
+  stroke: var(--orange); /* Define a cor do contorno no modo escuro */
 }
 
 body.dark .icon_heart {
@@ -215,7 +230,20 @@ body.dark .article_text p {
   color: var(--text-post);
 }
 
-/* Adicione estilos adicionais conforme necessário */
+/* footer */
+
+footer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: Lexend Deca;
+  color: var(--title);
+}
+
+body.dark footer {
+  color: var(--white);
+}
 
 /* Adicione media queries para diferentes tamanhos de tela */
 @media (min-width: 1281px) {
