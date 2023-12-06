@@ -1,5 +1,6 @@
 # Desafio Codelândia - 01
 
+![image](/assets/Images/Blog.png)
 O dasafio consiste em criar a UI no frontend a partir do design oferecido no Figma
 
 ## Codelândia
