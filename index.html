@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/variaveis.css">
+  <title>Blog</title>
+</head>
+<body>
+
+  <header>
+    <div class="nav_container">
+      <div class="nav_wrapper">
+        <div class="nav_menu">
+          <a href="">Codelândia</a>
+          <a href="">Blog</a>
+          <img class="icon_sun" src="assets/Images/SunDim.svg" alt="Icone de Sun" /> 
+        </div>
+        <div class="input_container">
+          <img class="icon_search" src="/assets/Images/Search.svg" alt="search"/>
+          <input type="search" id="searchInput" placeholder="Pesquisar no Blog">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="article_container">
+      <div class="article_card">
+        <div class="article_date_heart">
+          <h5>02 de jul, 2021</h5>
+          <div id="heartBtn">
+            <img class="icon_heart" src="assets/Images/Heart.svg" alt="Ícone de coração" />
+          </div>
+        </div>
+        <div class="article_text">
+          <h1>Agora é oficial: o Windows 11 está vindo</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article_container">
+      <div class="article_card">
+        <div class="article_date_heart">
+          <h5>02 de jul, 2021</h5>
+          <div id="heartBtn">
+            <img class="icon_heart" src="assets/Images/Heart.svg" alt="Ícone de coração" />
+          </div>
+        </div>
+        <div class="article_text">
+          <h1>Tim Berners-Lee vai leiloar código-fonte da web</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article_container">
+      <div class="article_card">
+        <div class="article_date_heart">
+          <h5>02 de jul, 2021</h5>
+          <div id="heartBtn">
+            <img class="icon_heart" src="assets/Images/Heart.svg" alt="Ícone de coração" />
+          </div>
+        </div>
+        <div class="article_text">
+          <h1>Tem Firefox novo no pedaço e você vai querer migrar</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article_container">
+      <div class="article_card">
+        <div class="article_date_heart">
+          <h5>02 de jul, 2021</h5>
+          <div id="heartBtn">
+            <img class="icon_heart" src="assets/Images/Heart.svg" alt="Ícone de coração" />
+          </div>
+        </div>
+        <div class="article_text">
+          <h1>John McAfee, criador do antivírus McAfee, morre</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.article_container', { delay: 200 });
+    ScrollReveal().reveal('.article_card', { delay: 300 });
+    ScrollReveal().reveal('.article_date_heart', { delay: 400 });
+    ScrollReveal().reveal('.article_text', { delay: 500 });
+  </script>
+</body>
+</html>

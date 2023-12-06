@@ -15,13 +15,13 @@ body {
 
 @font-face {
   font-family: Lexend Deca;
-  src: url(../assets/fonts/LexendDeca-Regular.ttf);
+  src: url(/assets/fonts/LexendDeca-Regular.ttf);
 }
 
 @font-face {
   font-family: Inter;
-  src: url(../assets/fonts/Inter-Medium.ttf);
-  src: url(../assets/fonts/Inter-Regular.ttf);
+  src: url(/assets/fonts/Inter-Medium.ttf);
+  src: url(/assets/fonts/Inter-Regular.ttf);
 }
 
 /* Header */
@@ -57,7 +57,6 @@ body {
   font-weight: 400;
   color: var(--white);
   text-decoration: none;
-  
 }
 
 .input_container {
@@ -99,6 +98,25 @@ body {
   }
 }
 
+.icon_sun, .icon_moon {
+  &:hover{
+    scale: 1.5;
+  }
+}
+
+/* Header - Black Mode */
+body.dark {
+  background: var(--black-main);
+}
+
+body.dark .nav_container{
+  background: var(--black-header);
+}
+
+body.dark .input_container .icon_search img {
+  fill: var(--orange);
+}
+
 /* Main - articles */
 
 .article_container {
@@ -107,7 +125,6 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-
 }
 
 .article_card {
@@ -119,7 +136,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  border-radius: 0.3125rem;
   background: #FFF;
   box-shadow: 0px 0px 10px 0px rgba(19, 19, 31, 0.05);
   flex-direction: column;
@@ -169,6 +185,37 @@ body {
   font-weight: 400;
   line-height: 2rem; /* 177.778% */
 }
+
+.icon_heart.filled, .icon_heart:hover {
+  cursor: pointer;
+}
+
+.icon_heart:hover {
+  scale: 1.5;
+}
+
+/* Main - Black Mode */
+body.dark .article_card {
+  background: var(--black-header);
+}
+
+body.dark .icon_heart {
+  fill: var(--orange);
+}
+
+body.dark .article_date_heart h5 {
+  color: var(--orange);
+}
+
+body.dark .article_text h1 {
+  color: var(--white);
+}
+
+body.dark .article_text p {
+  color: var(--text-post);
+}
+
+/* Adicione estilos adicionais conforme necessário */
 
 /* Adicione media queries para diferentes tamanhos de tela */
 @media (min-width: 1281px) {

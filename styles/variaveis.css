@@ -1,0 +1,18 @@
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #B6B6B6;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+
+  /* Dark Mode */
+  --black-header: #17171A;
+  --black-main: #121214;
+
+  --orange: #E07B67;
+  --box-shadow-dark:   box-shadow: 0px 0px 10px 0px #E07B67;
+  --text-post: #AFABB6;
+}
